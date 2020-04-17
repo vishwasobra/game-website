@@ -39,8 +39,9 @@ function setup() {
     background(0) ;
 
     playerSpeed = scl * 11 ;
-    player1 = new UnbeatableMachinePlayer('L') ;
-    player2 = new UltimateMachinePlayer('R') ;
+    // 'L' and 'R' indicate which side of the board you want to place the player
+    player1 = new UnbeatableMachinePlayer('L') ; // Use HumanPlayer() if you want to play with ai
+    player2 = new UltimateMachinePlayer('R') ; // AIs : MachinePlayer() , UnbeatableMachinePlayer() and UltimateMachinePlayer()
     ball = new Ball() ;
     ball.service(['L' , 'R'][Math.floor(random(0 , 2))]) ;
 }
