@@ -1,5 +1,3 @@
-///<reference path="../p5.global-mode.d.ts" />
-
 var scl ; // scale of elements
 var gameState = 0 ; // 0 : Game Menu , 1 : Start screen , 2 : Game screen , 3 : Game over screen
 var humanPlaying = true ;
